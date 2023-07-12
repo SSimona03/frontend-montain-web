@@ -9,4 +9,31 @@
     margin-left: 10vw;
     line-height: 85px;
   }
+
+  /************** Main - 01.History - images ***************/
+  .section-01-history-images {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  .section-01-history-images > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card:first-child,
+  .card:last-child {
+    display: none !important;
+  }
+  .card > img {
+    object-fit: cover;
+    width: 380px;
+    height: 180px;
+    padding: 8px;
+  }
+  .dots-box {
+    display: none !important;
+  }
 }

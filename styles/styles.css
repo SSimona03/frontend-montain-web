@@ -14,7 +14,6 @@ body {
   min-height: 100%;
 }
 main {
-  max-width: 1200px;
   margin: 0 auto;
 }
 /************** nav ***************/
@@ -103,6 +102,8 @@ header .title > p {
 }
 /************** Main - white border logo  ***************/
 .section-white-bar {
+  max-width: 1200px;
+  margin: auto;
   padding: 10px 0;
   display: flex;
   align-items: center;
@@ -120,13 +121,115 @@ main .nav-links a {
   border-bottom: solid 1px var(--dark-gray);
 }
 
+/************** Large number ***************/
+
+.large-number {
+  margin: 0;
+  position: relative;
+}
+.large-number > p:first-child {
+  margin: 0;
+  font-size: 120px;
+  color: var(--dark-gray);
+}
+
+.large-number > p:last-child {
+  opacity: 1;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--ocean-dark-blue);
+  position: absolute;
+  top: 0;
+  margin-left: 130px;
+  margin-top: 70px;
+}
+
 /************** Main - 01.History  ***************/
 
 .section-01-history {
-  font-family: "Barlow Condensed", sans-serif;
-  margin: 0 20px;
+  position: relative;
+  background-image: url("../images/mountain-p2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: calc(100vh - 90px);
+  max-width: 100%;
+}
+.section-01-history-info {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-01-history-info .large-number {
+  padding-top: 100px;
+}
+.section-01-history-info > p {
+  margin: 0;
+  margin-left: 60px;
+  color: var(--dark-gray);
+}
+.section-01-history .large-number > p:last-child {
+  position: absolute;
+  margin-left: 130px;
+  margin-top: 170px;
+}
+/************** Main - 01.History - images ***************/
+.section-01-history-images {
+  width: 100%;
+  background-color: var(--ocean-dark-blue);
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 0px;
+  padding: 30px 0;
 }
 
+.section-01-history-images > div {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.card > img {
+  object-fit: cover;
+  width: 180px;
+  height: 100px;
+  padding: 8px;
+}
+.dots-box {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.dot {
+  border: none;
+  background: var(--dark-gray);
+  width: 2px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  outline: none;
+}
+.dot:hover {
+  background: white;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.dot.active {
+  background: white;
+}
+
+/************** Main - 01.TEAM  ***************/
+
+.section-02-team-info {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin: auto;
+}
+.section-02-team-info p {
+  padding-left: 60px;
+  margin: auto;
+  max-width: 60%;
+}
 /************** Footer ***************/
 footer {
   padding: 20px 0;
