@@ -1,0 +1,33 @@
+@media only screen and (max-width: 700px) {
+  /************** nav ***************/
+  header .title {
+    font-size: 60px;
+    margin-top: 30vh;
+    margin-left: 10vw;
+    line-height: 55px;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links a:first-child {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .nav-links {
+    margin-right: 20px;
+  }
+
+  .nav-links a:last-child {
+    width: 82px;
+  }
+  /************** footer ***************/
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-text {
+    margin-right: 20px;
+  }
+}
